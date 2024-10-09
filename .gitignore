@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+pnpm-lock.yaml
+package-lock.json
+
+test/
+.VSCodeCounter/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
