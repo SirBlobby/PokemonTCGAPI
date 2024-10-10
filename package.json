@@ -1,6 +1,6 @@
 {
   "name": "@bosstop/pokemontcgapi",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Pokemon TCG API",
   "main": "dist/index.js",
   "module": "dist/index.js",

@@ -9,18 +9,18 @@ This is a simple API wrapper that allows you to get information about Pokemon ca
 ## Installation
 Install the package using npm:
 ```bash
-npm install pokemontcgapi
+npm install @bosstop/pokemontcgapi
 ```
 Install the package using pnpm:
 ```bash
-pnpm install pokemontcgapi
+pnpm install @bosstop/pokemontcgapi
 ```
 
 ## Usage
 ```javascript
-import { PokemonTCG } from 'pokemontcgapi';
+import { PokemonTCG } from '@bosstop/pokemontcgapi';
 
-const api = new PokemonTCG();
+const api = new PokemonTCG("<API_KEY>"); // Get your API key from https://pokemontcg.io/
 ```
 
 ## Get Types
@@ -106,3 +106,8 @@ enum ReturnData {
     TCGPLAYER = 'tcgplayer',
 }
 ```
+
+## Donate 
+If you like this package, consider donating to me. It will help me to maintain this package and make more packages like this.
+<br>
+[![Ko-fi](https://img.shields.io/badge/Donate-Ko--fi-red)](https://ko-fi.com/sirblob)
