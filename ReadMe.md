@@ -3,6 +3,8 @@
 This is a simple API wrapper that allows you to get information about Pokemon cards. It is built using [Pokemon TCG API](https://pokemontcg.io/) to get the data.
 
 **This is not an official API wrapper made by Pokemon TCG API.**
+<br><br>
+<img style="display: inline-block;" src="https://img.shields.io/npm/v/@bosstop/pokemontcgapi"> <img style="display: inline-block;" src="https://img.shields.io/npm/dt/@bosstop/pokemontcgapi" > <img style="display: inline-block;" src="https://img.shields.io/github/issues/GamerBoss101/PokemonTCGAPI" >
 
 ## Installation
 Install the package using npm:
@@ -16,9 +18,9 @@ pnpm install pokemontcgapi
 
 ## Usage
 ```javascript
-import { PokemonTCGAPI } from 'pokemontcgapi';
+import { PokemonTCG } from 'pokemontcgapi';
 
-const api = new PokemonTCGAPI();
+const api = new PokemonTCG();
 ```
 
 ## Get Types
