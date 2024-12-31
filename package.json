@@ -8,12 +8,13 @@
   "scripts": {
     "build": "tsc --outDir dist/",
     "publish": "npm run build && npm publish --access public",
-    "test": "bun ./test/index.js"
+    "test": "bun ./test/index.js",
+    "jsdoc": "npx typedoc src/index.ts"
   },
   "author": "Sir Blob",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.7.9"
   },
   "homepage": "https://github.com/GamerBoss101/PokemonTCGAPI#readme",
   "repository": {
