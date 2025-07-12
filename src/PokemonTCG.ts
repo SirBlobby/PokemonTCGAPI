@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios';
 
-import { AppResponse } from './types';
+import { AppResponse } from './index';
 
 import Cards from './cards';
 import Sets from './sets';

@@ -1,6 +1,6 @@
 import { AxiosInstance } from 'axios';
 
-import { AppResponse, ReturnData } from './types';
+import { AppResponse, ReturnData } from './index';
 
 export default class Cards {
     #instance: AxiosInstance;

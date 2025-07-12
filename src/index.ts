@@ -1,5 +1,5 @@
-// INTERFACES
-export * from './types';
+
+export * from './index.d';
 
 // MODULES
 export { default as Cards } from './cards';

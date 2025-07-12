@@ -1,6 +1,6 @@
 import { AxiosInstance } from "axios";
 
-import { AppResponse } from './types';
+import { AppResponse } from "./index";
 
 export default class Sets {
     #instance: AxiosInstance;
