@@ -45,9 +45,7 @@ export default class Cards {
     public async searchByName(name: string, subtype: string|null, type: string|null, filters: ReturnData[]|string[]|null = null) {
         return this.appResponse((await this.#instance.get('cards', {
             params: {
-				name: name ? name.trim() : undefined,
-				subtype: subtype ? subtype.trim() : undefined,
-				type: type ? type.trim() : undefined,
+				q: `name:${name.trim()}` + (subtype ? ` subtype:${subtype.trim()}` : '') + (type ? ` types:${type.trim()}` : ''),
 				select: filters ? filters.join(',') : undefined,
             },
         })));
