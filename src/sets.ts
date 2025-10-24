@@ -45,7 +45,7 @@ export default class Sets {
     public async getSetByName(name: string) {
         return this.appResponse(await this.#instance.get('sets', {
             params: {
-                q: `name:${name.trim()}`,
+                name: name ? name.trim() : undefined,
             },
         }));
     }

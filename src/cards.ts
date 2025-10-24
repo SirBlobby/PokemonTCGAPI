@@ -27,10 +27,10 @@ export default class Cards {
 	 * @returns {AppResponse} Returns a list of all available cards
 	 * @param {ReturnData[]|string[]} filters
 	 */
-    public async getCard(id: string, filters: ReturnData[]|string[] = []) {
+    public async getCard(id: string, filters: ReturnData[]|string[]|null = null) {
         return this.appResponse(await this.#instance.get(`cards/${id}`, {
 			params: {
-				select: filters.join(','),
+				select: filters ? filters.join(',') : undefined,
 			},
 		}));
     }
@@ -42,11 +42,13 @@ export default class Cards {
 	 * @param {ReturnData[]|string[]} filters
 	 * @returns {AppResponse} Returns a list of all available cards
 	 */
-    public async searchByName(name: string, subtype: string, type: string, filters: ReturnData[]|string[] = []) {
+    public async searchByName(name: string, subtype: string|null, type: string|null, filters: ReturnData[]|string[]|null = null) {
         return this.appResponse((await this.#instance.get('cards', {
             params: {
-                q: `${name ? `name:${name.trim()}` : ''} ${subtype ? `subtypes:${subtype.trim()}` : ''} ${type ? `types:${type.trim()}` : ''}`,
-				select: filters.join(','),
+				name: name ? name.trim() : undefined,
+				subtype: subtype ? subtype.trim() : undefined,
+				type: type ? type.trim() : undefined,
+				select: filters ? filters.join(',') : undefined,
             },
         })));
     }

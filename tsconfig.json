@@ -5,7 +5,6 @@
     "target": "ES6", 
     "outDir": "dist",
     "module": "commonjs",
-    "moduleResolution": "node",
     "sourceMap": true,
     "lib": ["es2015", "dom"],
     "rootDir": "src",
